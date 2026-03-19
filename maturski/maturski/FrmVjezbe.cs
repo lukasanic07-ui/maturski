@@ -361,7 +361,6 @@ namespace WindowsFormsApplication1
             PrimijeniFilterISort();
         }
 
-        // ODABERI VJEŽBU - DOUBLE CLICK
         private void dgvVjezbe_DoubleClick(object sender, EventArgs e)
         {
             if (dgvVjezbe.CurrentRow != null)
@@ -388,6 +387,30 @@ namespace WindowsFormsApplication1
             public int PlaniraniSetovi { get; set; }
             public int UradjeniSetovi { get; set; }
             public bool Uradjeno { get; set; }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (dgvVjezbe.CurrentRow != null)
+            {
+                int id = Convert.ToInt32(dgvVjezbe.CurrentRow.Cells["VjezbaID"].Value);
+                OdabranaVjezba = listaVjezb.FirstOrDefault(x => x.VjezbaID == id);
+
+                if (OdabranaVjezba != null)
+                {
+                    DialogResult = DialogResult.OK;
+                    Close();
+                }
+                else
+                    MessageBox.Show("Vježba nije pronađena!");
+            }
+            else
+                MessageBox.Show("Odaberi vježbu iz liste!");
         }
     }
 }

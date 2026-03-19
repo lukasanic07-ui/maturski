@@ -137,6 +137,7 @@
             this.btnHome.TabIndex = 1;
             this.btnHome.Text = "Korisnik";
             this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // lblFit
             // 

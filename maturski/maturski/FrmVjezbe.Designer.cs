@@ -49,6 +49,8 @@
             this.cmbFilterTip = new System.Windows.Forms.ComboBox();
             this.cmbFilterGrupa = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVjezbe)).BeginInit();
             this.SuspendLayout();
             // 
@@ -263,12 +265,42 @@
             this.button1.TabIndex = 15;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Ponedeljak",
+            "Utorak",
+            "Srijeda",
+            "Cetvrtak",
+            "Petak",
+            "Subota",
+            "Nedelja"});
+            this.comboBox1.Location = new System.Drawing.Point(801, 501);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 16;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(798, 480);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(138, 18);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Dodaj Vjezbu u plan";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // FrmVjezbe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1027, 631);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cmbFilterGrupa);
             this.Controls.Add(this.cmbFilterTip);
@@ -323,5 +355,7 @@
         private System.Windows.Forms.ComboBox cmbFilterTip;
         private System.Windows.Forms.ComboBox cmbFilterGrupa;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label7;
     }
 }

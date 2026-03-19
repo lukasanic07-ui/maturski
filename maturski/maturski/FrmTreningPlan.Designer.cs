@@ -55,14 +55,14 @@
             this.dgvVjezbeZaDan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVjezbeZaDan.Location = new System.Drawing.Point(145, 51);
             this.dgvVjezbeZaDan.Name = "dgvVjezbeZaDan";
-            this.dgvVjezbeZaDan.Size = new System.Drawing.Size(420, 220);
+            this.dgvVjezbeZaDan.Size = new System.Drawing.Size(573, 220);
             this.dgvVjezbeZaDan.TabIndex = 1;
             this.dgvVjezbeZaDan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVjezbeZaDan_CellContentClick);
             // 
             // btnDodajVjezbu
             // 
             this.btnDodajVjezbu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDodajVjezbu.Location = new System.Drawing.Point(145, 335);
+            this.btnDodajVjezbu.Location = new System.Drawing.Point(242, 331);
             this.btnDodajVjezbu.Name = "btnDodajVjezbu";
             this.btnDodajVjezbu.Size = new System.Drawing.Size(75, 23);
             this.btnDodajVjezbu.TabIndex = 2;
@@ -73,7 +73,7 @@
             // btnUredi
             // 
             this.btnUredi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUredi.Location = new System.Drawing.Point(244, 335);
+            this.btnUredi.Location = new System.Drawing.Point(341, 331);
             this.btnUredi.Name = "btnUredi";
             this.btnUredi.Size = new System.Drawing.Size(75, 23);
             this.btnUredi.TabIndex = 3;
@@ -83,7 +83,7 @@
             // btnObrisi
             // 
             this.btnObrisi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnObrisi.Location = new System.Drawing.Point(342, 335);
+            this.btnObrisi.Location = new System.Drawing.Point(439, 331);
             this.btnObrisi.Name = "btnObrisi";
             this.btnObrisi.Size = new System.Drawing.Size(75, 23);
             this.btnObrisi.TabIndex = 4;
@@ -122,7 +122,7 @@
             // lblNapredak
             // 
             this.lblNapredak.AutoSize = true;
-            this.lblNapredak.Location = new System.Drawing.Point(186, 387);
+            this.lblNapredak.Location = new System.Drawing.Point(283, 383);
             this.lblNapredak.Name = "lblNapredak";
             this.lblNapredak.Size = new System.Drawing.Size(35, 13);
             this.lblNapredak.TabIndex = 8;
@@ -132,7 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 411);
+            this.ClientSize = new System.Drawing.Size(812, 418);
             this.Controls.Add(this.lblNapredak);
             this.Controls.Add(this.btnSpremiPlan);
             this.Controls.Add(this.label1);

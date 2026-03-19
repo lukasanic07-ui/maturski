@@ -79,7 +79,6 @@ namespace WindowsFormsApplication1
                     UradjeniSetovi = 0
                 });
                 OsvjeziGrid();
-                MessageBox.Show("Vježba dodana u plan!");
             }
         }
 
@@ -110,11 +109,11 @@ namespace WindowsFormsApplication1
 
         private void btnSpremiPlan_Click(object sender, EventArgs e)
         {
-            if (vjezbeZaDan.Count == 0)
+            /*if (vjezbeZaDan.Count == 0)
             {
                 MessageBox.Show("Dodaj barem jednu vježbu!");
                 return;
-            }
+            }*/
 
             MessageBox.Show("Plan spremljen!");
             DialogResult = DialogResult.OK;
@@ -130,5 +129,6 @@ namespace WindowsFormsApplication1
                 OsvjeziGrid();
             }
         }
+    
     }
 }
